@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="text-light bg-dark">
+    <form action="/addNewPost" method="post">
+      <h2 class="text-center">Add new post</h2>
+      <input placeholder="Title" class="form-control my-2" type="text" name="title" />
+      <textarea placeholder="Description" class="form-control my-2" type="text" name="description" cols="30" rows="10"></textarea>
+      <input value="" class="form-control dateTime my-2" type="text" name="date" readonly />
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+    <script>
+      let time = new Date()
+      document.querySelector(".dateTime").value = `${time.getUTCDate()}:${time.getUTCMonth()}:${time.getFullYear()}`
+    </script>
+  </body>
+</html>
