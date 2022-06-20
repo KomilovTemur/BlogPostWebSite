@@ -19,4 +19,4 @@ $ npm install
 ````
 $ npm start
 ````
-### Contact mee with [Telegram](https://t.me/tim_coder)
+### Contact me with [Telegram](https://t.me/tim_coder)
