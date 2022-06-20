@@ -19,5 +19,4 @@ $ npm install
 ````
 $ npm start
 ````
-
-### Open project with this link [http://localhost:3000](http://localhost:3000 "open in browser")
+### Contact me with [Telegram](https://t.me/tim_coder)
