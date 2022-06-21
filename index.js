@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 var db = new sqlite3.Database("db/database.db");
 
 app.get("/", (req, res) => {
-  db.all("select * from blogs", (err, rows) => {
+  db.all("select * from blogs order by id DESC", (err, rows) => {
     res.render("index", { data: rows });
   });
 });
